@@ -1,0 +1,12 @@
+package com.NYSE.parsers;
+
+public class MYSEParser {
+	private String stockTicker;
+	private String tradeDate;
+	private Float openPrice;
+	private Float closePrice;
+	private Float highPrice;
+	private Float lowPrice;
+	private Long volume;
+
+}
