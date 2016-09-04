@@ -1,0 +1,42 @@
+package com.NYSE.keyvalues;
+
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.WritableComparable;
+
+public class TextPair implements WritableComparable<TextPair> {
+	
+	private Text first;
+	private Text second;
+
+	public TextPair(Text first, Text second) {
+		super();
+		this.first = first;
+		this.second = second;
+	}
+	
+	public TextPair(String first, String second) {
+		super();
+		this.first = new Text(first);
+		this.second = new Text(second);
+	}
+
+	public void readFields(DataInput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void write(DataOutput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int compareTo(TextPair o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
